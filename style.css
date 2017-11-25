@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Peralta');
+
+body {
+  background: url(images/grass.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Peralta', cursive;
+}
+
+
+h1 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #111111;
+}
+
+#container {
+  width: 60%;
+  margin: 1% auto;
+  background: rgba(255,255,255,0.7);
+  min-height: 445px;
+  padding: 2% 0 5% 0px;
+}
+
+#buttonRowInfo, #buttonRowPlay, #infoStatus, #questionBox, #scoreBox {
+  text-align: center;
+}
+
+#buttonRowInfo, #buttonRowPlay {
+  display: flex;
+  justify-content: space-around;
+}
+
+#scoreBox {
+  border: 5px solid #111111;
+  max-width: 55%;
+  margin: 0% auto 2% auto;
+  padding: 2%;
+}
+
+#infoStatus {
+  width: 60%;
+  margin: 0% auto 5% auto;
+}
+
+#questionBox {
+  padding-bottom: 5%;
+  font-size: 2em;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  transition: all ease 0.5s;
+}
+
+#landscape, #buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255,255,255,0);
+}
+
+#landscape:hover, #buy:hover {
+  color: #111111;
+  font-size: 1em;
+}
+
+#landscape:active, #buy:active {
+  color: #DDDDDD;
+  opacity: .1;
+  margin-top: 5px;
+}
+
+#landscape img, #buy img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/*MODAL*/
+
+#modal {
+  background-color: rgba(0,0,0,0.6);
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	z-index: 1;
+ 	overflow: auto;
+  display: none;
+}
+
+#modal-textbox {
+  background-color: white;
+  min-height: 20%;
+  width: 40%;
+  border-radius: 2px;
+  margin: 20% auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  line-height: 120%;
+  text-align: center;
+}
+
+#modal-textbox ul {
+  padding-left: 3%;
+}
+
+#modal-textbox li, #modal-textbox h3 {
+  text-align: left;
+  /*list-style: none;*/
+}
+
+#close {
+  text-align: right;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 730px) {
+  h1 {
+    font-size: 3em;
+  }
+  #modal-textbox {
+    width: 60%;
+    margin: 20% auto;
+    padding: 5%;
+  }
+  #container {
+    width: 80%;
+  }
+  #scoreBox {
+    max-width: 80%;
+    font-size: .75em;
+    border: 3px solid #111111;
+    background: rgba(255,255,255,.9);
+  }
+  #infoStatus {
+    width: 90%;
+  }
+  #questionBox {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2em;
+  }
+  #modal-textbox {
+    width: 80%;
+    margin: 15% auto;
+  }
+  #modal-textbox li {
+    font-size: .5em;
+  }
+  #container {
+    width: 90%;
+    padding: 5%;
+  }
+}
