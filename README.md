@@ -1,8 +1,6 @@
 # Landscaper
 
-https://thelandscaper.herokuapp.com/
-
-#### [LIVE LINK](https://cwithac.github.io/games/landscaper/) + [REPO](https://github.com/cwithac/cwithac.github.io/tree/master/games/landscaper)
+#### [LIVE LINK](https://thelandscaper.herokuapp.com/) + [REPO](https://github.com/cwithac/landscaper)
 
 ![landscaper](https://i.imgur.com/KEUG69J.png)
 
@@ -14,6 +12,7 @@ https://thelandscaper.herokuapp.com/
 + Javascript
 + jQuery
 + OOP
++ NPM Express
 ```
 
 ### How To Play
