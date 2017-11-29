@@ -132,7 +132,7 @@ const gameSetup = {
     gameSetup.startGame();
   },
   checkForWinner() {
-    if (money > winningMoney) {
+    if (money >= winningMoney) {
       gameInfo.alertWinner();
     }
   },
